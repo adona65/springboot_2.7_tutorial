@@ -12,3 +12,6 @@ The goal of this document is explaining various informations about this project.
 - With command prompt, go to project's folder.
 - Check it well contains <span style="color: green;">*mvnw*</span> file (provided by default if project was created using <span style="color: green;">*spring initializr*</span>).
 - Use <span style="color: green;">*mvnw spring-boot:run*</span>. The application will listen by default on <a href="http://localhost:8080">http://localhost:8080</a>.
+
+
+This works because Spring Boot embed an Apache Tomcat server that is acting as a webserver and is listening for requests on localhost port 8080.
