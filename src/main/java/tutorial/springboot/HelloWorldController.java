@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
  * for more details). This ability is declared using @RestController annotation, that combined two others :<br/>
  * - @Controller that indicates the annotated class is a "Controller" (e.g. a web controller).<br/>
  * - @ResponseBody that indicates a method return value should be bound to the web response body.<br/>
+ * ==> This two annotations results in web requests returning data rather than a view.<br/>
  * <br/>
  * Types that carry this @RestController annotation are treated as controllers where @RequestMapping methods assume @ResponseBody 
  * semantics by default. 
@@ -43,4 +44,12 @@ public class HelloWorldController {
 		return String.format("Goodbye %s!", name);
 	}
 
+	/**
+	 * This allow to handle requests to application's default address. It will answer "Welcome to default page!" 
+	 * to calls on "http://localhost:8080".
+	 */
+	@GetMapping("/")
+	public String index() {
+		return "Welcome to default page!";
+	}
 }
