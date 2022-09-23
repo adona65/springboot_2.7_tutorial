@@ -21,5 +21,22 @@ These are just a few examples of the automatic configuration Spring Boot provide
 - Check it well contains <span style="color: green;">*mvnw*</span> file (provided by default if project was created using <span style="color: green;">*spring initializr*</span>).
 - Use <span style="color: green;">*mvnw spring-boot:run*</span>. The application will listen by default on <a href="http://localhost:8080">http://localhost:8080</a>.
 
-
 This works because Spring Boot embed an Apache Tomcat server that is acting as a webserver and is listening for requests on localhost port 8080.
+
+#### How to Add Production-grade Services
+ Spring Boot provides several management services (such as health, audits, beans, and more) with its actuator module (documentation at <span style="color: green;">*https://docs.spring.io/spring-boot/docs/2.5.0/reference/htmlsingle/#actuator*</span>).
+ 
+To use this services, we need to add some maven dependency :
+<dependency>
+&nbsp;&nbsp;&nbsp;&nbsp;<groupId>org.springframework.boot</groupId>
+&nbsp;&nbsp;&nbsp;&nbsp;<artifactId>spring-boot-starter-actuator</artifactId>
+</dependency>
+
+The actuator will exposes the following :
+- <a href="http://localhost:8080/actuator/health">actuator/health</a>
+- <a href="http://localhost:8080/actuator">actuator</a>
+
+All details about each available REST endpoints and how we can tune their settings with an application.properties file (in src/main/resources) are available in documentation located at <span style="color: green;">*https://docs.spring.io/spring-boot/docs/2.5.0/reference/htmlsingle/#actuator.endpoints*</span>.
+
+As a conclusion, we will note that there also is a */actuator/shutdown* endpoint, visible only through JMX by default. To enable it as an HTTP endpoint, add <span style="color: green;">*management.endpoint.shutdown.enabled=true*</span> to application.properties file and expose it with <span style="color: green;">*management.endpoints.web.exposure.include=health,info,shutdown*</span>.
+<br/><u>Please beware that, we should not enable the shutdown endpoint for a publicly available application.</u>
