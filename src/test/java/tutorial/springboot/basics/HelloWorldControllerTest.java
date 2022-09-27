@@ -1,4 +1,4 @@
-package tutorial.springboot;
+package tutorial.springboot.basics;
 
 import org.junit.jupiter.api.Test;
 

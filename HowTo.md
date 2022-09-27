@@ -16,14 +16,20 @@ Spring Boot provide a fast way to build applications. It looks at your classpath
 
 These are just a few examples of the automatic configuration Spring Boot provides. Keeo in mind that Spring Boot does not generate code or make edits to your files. Instead, when you start your application, Spring Boot dynamically wires up beans and settings and applies them to your application context. 
 
-#### How to launch the application (for Windows)
+#### Packages tree
+Each package will content tutorials about a given point :
+- <u>*tutorial.springboot*</u> : Explanations about Spring boot main class, and launching of the application.
+- <u>*tutorial.springboot.basics*</u> : Show of to create basic HelloWorld rest application.
+- <u>*tutorial.springboot.restful*</u> : Explain how to build a RESTful Web Service.
+
+#### Launch the application (for Windows)
 - With command prompt, go to project's folder.
 - Check it well contains <span style="color: green;">*mvnw*</span> file (provided by default if project was created using <span style="color: green;">*spring initializr*</span>).
 - Use <span style="color: green;">*mvnw spring-boot:run*</span>. The application will listen by default on <a href="http://localhost:8080">http://localhost:8080</a>.
 
 This works because Spring Boot embed an Apache Tomcat server that is acting as a webserver and is listening for requests on localhost port 8080.
 
-#### How to Add Production-grade Services
+#### Add Production-grade Services
  Spring Boot provides several management services (such as health, audits, beans, and more) with its actuator module (documentation at <span style="color: green;">*https://docs.spring.io/spring-boot/docs/2.5.0/reference/htmlsingle/#actuator*</span>).
  
 To use this services, we need to add some maven dependency :
@@ -39,4 +45,12 @@ The actuator will exposes the following :
 All details about each available REST endpoints and how we can tune their settings with an application.properties file (in src/main/resources) are available in documentation located at <span style="color: green;">*https://docs.spring.io/spring-boot/docs/2.5.0/reference/htmlsingle/#actuator.endpoints*</span>.
 
 As a conclusion, we will note that there also is a */actuator/shutdown* endpoint, visible only through JMX by default. To enable it as an HTTP endpoint, add <span style="color: green;">*management.endpoint.shutdown.enabled=true*</span> to application.properties file and expose it with <span style="color: green;">*management.endpoints.web.exposure.include=health,info,shutdown*</span>.
-<br/><u>Please beware that, we should not enable the shutdown endpoint for a publicly available application.</u>
+<br/><u>Please beware that we should not enable the shutdown endpoint for a publicly available application.</u>
+
+#### Build an executable JAR
+- With command prompt, go to project's folder.
+- Check it well contains <span style="color: green;">*mvnw*</span> file (provided by default if project was created using <span style="color: green;">*spring initializr*</span>).
+- Use <span style="color: green;">*mvnw clean package*</span>.
+
+Then, if you wan't to run the application using this jar, just place yourself into the folder containing the jar and execute <span style="color: green;">*java -jar {place name of jar here}.jar*</span>
+

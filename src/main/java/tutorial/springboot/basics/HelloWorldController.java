@@ -1,4 +1,4 @@
-package tutorial.springboot;
+package tutorial.springboot.basics;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

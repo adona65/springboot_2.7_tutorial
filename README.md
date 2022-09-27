@@ -11,3 +11,4 @@ Contains tests and tutorials about the spring boot framework, version 2.7.
 <u>Sources I used for Spring boot 2.7 training :</u>
 - https://spring.io/quickstart
 - https://spring.io/guides/gs/spring-boot/
+- https://spring.io/guides/gs/rest-service/
