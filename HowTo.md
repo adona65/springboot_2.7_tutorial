@@ -18,9 +18,10 @@ These are just a few examples of the automatic configuration Spring Boot provide
 
 #### Packages tree
 Each package will content tutorials about a given point :
-- <u>*tutorial.springboot*</u> : Explanations about Spring boot main class, and launching of the application.
-- <u>*tutorial.springboot.basics*</u> : Show of to create basic HelloWorld rest application.
-- <u>*tutorial.springboot.restful*</u> : Explain how to build a RESTful Web Service.
+- <b>*tutorial.springboot* :</b> Explanations about Spring boot main class, and launching of the application.
+- <b>*tutorial.springboot.basics* :</b> Show of to create basic HelloWorld rest application.
+- <b>*tutorial.springboot.restful* :</b> Explain how to build a RESTful Web Service.
+- <b>*tutorial.springboot.serving_web_content* :</b> Demonstrate how to develop a tiny web application served by rest services with spring.
 
 #### Launch the application (for Windows)
 - With command prompt, go to project's folder.
