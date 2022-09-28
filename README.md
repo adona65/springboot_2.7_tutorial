@@ -12,3 +12,4 @@ Contains tests and tutorials about the spring boot framework, version 2.7.
 - https://spring.io/quickstart
 - https://spring.io/guides/gs/spring-boot/
 - https://spring.io/guides/gs/rest-service/
+- https://spring.io/guides/gs/serving-web-content/

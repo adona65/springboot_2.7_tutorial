@@ -46,10 +46,15 @@ public class HelloWorldController {
 
 	/**
 	 * This allow to handle requests to application's default address. It will answer "Welcome to default page!" 
-	 * to calls on "http://localhost:8080".
+	 * to calls on "http://localhost:8080".<br/>
+	 * <br/>
+	 * This method is commented because it was replaced by "src/main/resources/static/greeting.html" file that
+	 * handle requests on default address. Watch inside this file for more explanations.
 	 */
+	/*
 	@GetMapping("/")
 	public String index() {
 		return "Welcome to default page!";
 	}
+	*/
 }
