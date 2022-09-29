@@ -17,11 +17,12 @@ Spring Boot provide a fast way to build applications. It looks at your classpath
 These are just a few examples of the automatic configuration Spring Boot provides. Keeo in mind that Spring Boot does not generate code or make edits to your files. Instead, when you start your application, Spring Boot dynamically wires up beans and settings and applies them to your application context. 
 
 #### Packages tree
-Each package will content tutorials about a given point :
+Each package will contain tutorials about a given point. The following list explain the point of each package's content, and the best order to watch them :
 - <b>*tutorial.springboot* :</b> Explanations about Spring boot main class, and launching of the application.
 - <b>*tutorial.springboot.basics* :</b> Show of to create basic HelloWorld rest application.
 - <b>*tutorial.springboot.restful* :</b> Explain how to build a RESTful Web Service.
 - <b>*tutorial.springboot.serving_web_content* :</b> Demonstrate how to develop a tiny web application served by rest services with spring.
+- <b>*tutorial.springboot.rest_application* :</b> Contains a web application for learning purpose, which goal is to implement a simple payroll service that manages the employees of a company. It's code use concepts described in previous package, along with others new like "working with a Data Base using JPA in spring", or working with HATEOAS principles.
 
 #### Launch the application (for Windows)
 - With command prompt, go to project's folder.
