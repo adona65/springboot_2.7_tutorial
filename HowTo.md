@@ -23,6 +23,7 @@ Each package will contain tutorials about a given point. The following list expl
 - <b>*tutorial.springboot.restful* :</b> Explain how to build a RESTful Web Service.
 - <b>*tutorial.springboot.serving_web_content* :</b> Demonstrate how to develop a tiny web application served by rest services with spring.
 - <b>*tutorial.springboot.rest_application* :</b> Contains a web application for learning purpose, which goal is to implement a simple payroll service that manages the employees of a company. It's code use concepts described in previous package, along with others new like "working with a Data Base using JPA in spring", or working with HATEOAS principles.
+- <b>*tutorial.springboot.sqlite* :</b> Explain how to use Spring boot with SQLite database.
 
 #### Launch the application (for Windows)
 - With command prompt, go to project's folder.
@@ -57,12 +58,11 @@ As a conclusion, we will note that there also is a */actuator/shutdown* endpoint
 Then, if you wan't to run the application using this jar, just place yourself into the folder containing the jar and execute <span style="color: green;">*java -jar {place name of jar here}.jar*</span>
 
 #### Spring Boot Devtools
-
-
 A common feature of developing web applications is coding a change, restarting the application, and refreshing the browser to view the change. This entire process can eat up a lot of time. To speed up this refresh cycle, Spring Boot offers with a handy module known as <span style="color: green;">spring-boot-devtools</span>. Spring Boot Devtools:
 - Enables hot swapping.
 - Switches template engines to disable caching.
 - Enables LiveReload to automatically refresh the browser.
 - Other reasonable defaults based on development instead of production.
 
-
+#### Navigate into SQLite
+For watching datas inside an SQLite's database, we may use <a href="https://sqlitestudio.pl/">SQLites Studio</a>.

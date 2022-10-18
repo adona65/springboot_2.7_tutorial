@@ -14,3 +14,5 @@ Contains tests and tutorials about the spring boot framework, version 2.7.
 - https://spring.io/guides/gs/rest-service/
 - https://spring.io/guides/gs/serving-web-content/
 - https://spring.io/guides/tutorials/rest/
+- https://medium.com/
+- https://fullstackdeveloper.guru
