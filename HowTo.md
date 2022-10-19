@@ -24,6 +24,7 @@ Each package will contain tutorials about a given point. The following list expl
 - <b>*tutorial.springboot.serving_web_content* :</b> Demonstrate how to develop a tiny web application served by rest services with spring.
 - <b>*tutorial.springboot.rest_application* :</b> Contains a web application for learning purpose, which goal is to implement a simple payroll service that manages the employees of a company. It's code use concepts described in previous package, along with others new like "working with a Data Base using JPA in spring", or working with HATEOAS principles.
 - <b>*tutorial.springboot.sqlite* :</b> Explain how to use Spring boot with SQLite database.
+- <b>*tutorial.springboot.security* :</b> Basic example on how secure a MVC application with Spring Security.
 
 #### Launch the application (for Windows)
 - With command prompt, go to project's folder.
